@@ -1,4 +1,4 @@
-#CSV Normalizer
+##CSV Normalizer
 Takes a CSV file as input, reads the file, normalizes its contents, and writes to a new file with the normalized content.
 
 ### Instructions For Running the App
