@@ -40,8 +40,7 @@ class CsvParser
     end
 
     def duration_to_seconds(duration)
-      duration_array = duration.split(":")
-      duration_array[0].to_f * 3600 + duration_array[1].to_f * 60 + duration_array[2].to_f
+      duration.split(':').map { |a| a.to_f }.inject(0) { |a, b| a * 60 + b }
     end
 
     def total_duration(a, b)
