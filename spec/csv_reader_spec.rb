@@ -13,7 +13,7 @@ RSpec.describe CsvReader do
 
   describe "#read_csv" do
     before do
-      expect(CSV).to receive(:read).with(file_name, headers: true).and_return(csv_data)
+      expect(CSV).to receive(:read).with(file_name, headers: true, encoding: 'ISO-8859-1:UTF-8').and_return(csv_data)
     end
 
     it "returns all rows of csv data" do
