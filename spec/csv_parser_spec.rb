@@ -11,7 +11,7 @@ RSpec.describe CsvParser do
   end
   let(:normalized_data) do [
     ["2011-04-01T14:00:00-04:00", "123 4th St, Anywhere, AA", "94121", "MONKEY ALBERTO", 5012.123, 5553.123, 10565.246, "I am the very model of a modern major general"],
-    ["2014-03-12T15:00:00-04:00", "Somewhere Else, In Another Time, BB", "00001", "SUPERMAN ��BERTAN", 401012.123, 5553.123, 406565.24600000004, "This is some Unicode right here. �� ��! ����"]
+    ["2014-03-12T15:00:00-04:00", "Somewhere Else, In Another Time, BB", "00001", "SUPERMAN ��BERTAN", 401012.123, 5553.123, 406565.246, "This is some Unicode right here. �� ��! ����"]
   ]
   end
   let(:file_name) { "test-sample.csv" }

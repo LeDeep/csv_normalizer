@@ -53,7 +53,7 @@ class CsvParser
     end
 
     def total_duration(a, b)
-      a + b
+      (a + b).round(3)
     end
 
     def format_note(note)
