@@ -5,7 +5,6 @@ require 'csv'
 class CsvWriter
 
   def self.write_csv(file)
-    #csv = CsvReader.new.read_csv(file)
     parsed_csv = CsvParser.parse_csv(file)
     CSV.open(
       "normalized-" + file,
